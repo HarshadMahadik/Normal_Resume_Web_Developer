@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- The page title becomes the default PDF file name -->
+  <title>Harshad_Mahadik_Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #eef2f7; font-family: "Aptos", "Segoe UI", Arial, Helvetica, sans-serif; color: #263449; font-size: 9.6pt; line-height: 1.42; }
+
+    /* Download button (screen only) */
+    .download-bar { position: fixed; top: 16px; right: 16px; z-index: 10; }
+    .download-btn { background: #1d6fce; color: #fff; border: none; border-radius: 6px; padding: 10px 18px; font: 600 14px Arial, sans-serif; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+    .download-btn:hover { background: #0a4a8a; }
+
+    /* Paper */
+    .page { width: 210mm; min-height: 297mm; margin: 24px auto; padding: 13mm 15mm; background: #fff; box-shadow: 0 5px 22px rgba(25,45,75,.12); border-top: 5px solid #1769aa; }
+
+    header { text-align: center; margin-bottom: 10pt; padding-bottom: 9pt; border-bottom: 1px solid #d8e2ef; }
+    h1 { color: #145b96; font-size: 22pt; font-weight: 750; letter-spacing: 0.7pt; line-height: 1.15; }
+    .role { color: #344b66; font-size: 11pt; font-weight: 600; margin-top: 4pt; }
+    .contact { color: #52647a; font-size: 8.2pt; margin-top: 4pt; overflow-wrap: anywhere; }
+    a { color: #1769aa; text-decoration: none; }
+
+    h2 { color: #145b96; font-size: 10.5pt; font-weight: 750; letter-spacing: .65pt; text-transform: uppercase; border-bottom: 1.5px solid #8bb8df; padding-bottom: 3pt; margin: 11pt 0 5pt; break-after: avoid; page-break-after: avoid; }
+    p { margin-bottom: 3pt; }
+    .row { display: flex; justify-content: space-between; gap: 12pt; font-weight: 700; color: #263f5d; }
+    .row span:last-child { white-space: nowrap; color: #52647a; font-weight: 600; }
+    .sub { margin-bottom: 2pt; }
+    .small { color: #52647a; font-size: 8.5pt; }
+    ul { margin: 2pt 0 4pt 16pt; }
+    li { margin-bottom: 2pt; padding-left: 1pt; }
+    .item { margin-bottom: 5pt; padding-bottom: 3pt; border-bottom: 1px solid #edf1f6; break-inside: avoid; page-break-inside: avoid; }
+    .item:last-of-type { border-bottom: none; }
+    strong { color: #263f5d; }
+
+    @media (max-width: 800px) {
+      .page { width: auto; margin: 0; padding: 22px 18px; box-shadow: none; min-height: 0; border-top-width: 4px; }
+      .download-bar { top: 8px; right: 8px; }
+    }
+
+    /* PDF / print: button and gray background are removed */
+    @page { size: A4; margin: 0; }
+    @media print {
+      .download-bar { display: none !important; }
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; border-top: 0; width: 100%; min-height: 0; padding: 10mm 14mm; font-size: 9.4pt; line-height: 1.34; }
+      h2 { margin: 8pt 0 4pt; padding-bottom: 3pt; }
+      h2.education-start { break-before: page; page-break-before: always; }
+      p { margin-bottom: 3pt; }
+      header { margin-bottom: 7pt; padding-bottom: 6pt; }
+      .item { margin-bottom: 4pt; padding-bottom: 3pt; break-inside: avoid; page-break-inside: avoid; }
+      li { margin-bottom: 1.8pt; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="download-bar">
+    <button class="download-btn" onclick="window.print()">Download PDF</button>
+  </div>
+
+  <main class="page" id="resume">
+
+    <header>
+      <h1>HARSHAD ANANT MAHADIK</h1>
+      <p class="role">Frontend Developer &nbsp;|&nbsp; WordPress Developer</p>
+      <p class="contact">
+        <a href="mailto:harshadmahadik8521@gmail.com">harshadmahadik8521@gmail.com</a> &nbsp;|&nbsp;
+        <a href="tel:+919021562839">+91 9021562839</a> &nbsp;|&nbsp; Nalasopara, Maharashtra, India
+      </p>
+      <p class="contact">
+        LinkedIn: <a href="https://linkedin.com/in/harshad-mahadik-7a21ik">harshad-mahadik-7a21ik</a> &nbsp;|&nbsp;
+        GitHub: <a href="https://github.com/HarshadMahadik">HarshadMahadik</a> &nbsp;|&nbsp;
+        Portfolio: <a href="https://harshadmahadik-portfolio.netlify.app/">harshadmahadik-portfolio.netlify.app</a>
+      </p>
+    </header>
+
+    <h2>Professional Summary</h2>
+    <p>Passionate Frontend and WordPress Developer with 1 year of professional experience building responsive websites, landing pages, and business web solutions. Skilled in HTML5, CSS3, JavaScript, React JS, and WordPress customization. Experienced in full-cycle website delivery including hosting management, domain configuration, cPanel operations, and deployment for clients in service industries.</p>
+
+    <h2>Professional Experience</h2>
+    <div class="row"><span>Web Developer / WordPress Developer | Web Development Agency, Nalasopara, India</span><span>12 May 2025 – 31 Jul 2026</span></div>
+    <ul>
+      <li>Built responsive website templates daily using HTML5, CSS3, and JavaScript for local service businesses</li>
+      <li>Developed and customized WordPress websites with custom themes and plugins using Elementor and PHP</li>
+      <li>Created fast, SEO-optimized landing pages for plumbing, HVAC, AC service, and loan businesses</li>
+      <li>Managed hosting environments, domain configuration, DNS records, and cPanel operations</li>
+      <li>Used React JS for modern frontend development on select client projects</li>
+      <li>Handled end-to-end technical website setup, deployment, and ongoing maintenance of live client sites</li>
+      <li>Delivered production-ready templates within tight client deadlines consistently</li>
+    </ul>
+    <p class="small">Experience Letter: <a href="https://drive.google.com/file/d/1sG0TCnHgvm8QY8oQCrYLRXGsO8er5n2g/view?usp=sharing">View Experience Letter</a></p>
+
+    <h2>Technical Skills</h2>
+    <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React JS, Bootstrap 5, Responsive Design, Flexbox, CSS Grid</p>
+    <p><strong>CMS &amp; Tools:</strong> WordPress, Elementor, PHP (basic), GitHub, cPanel, Domain &amp; Hosting Management, DNS Management</p>
+    <p><strong>Backend &amp; Database:</strong> Core Java, C Programming, MySQL, Firebase</p>
+    <p><strong>Other:</strong> SEO Optimization, Google My Business, Deployment, Website Performance Optimization</p>
+
+    <h2>Projects</h2>
+    <div class="item">
+      <p class="sub"><strong>Saffron &amp; Salt – Restaurant Website &nbsp;|&nbsp; HTML5 | CSS3 | JavaScript | Bootstrap 5</strong></p>
+      <p>Full production restaurant website with parallax hero, filterable menu, lightbox gallery, testimonials carousel, and a table reservation form with client-side validation. Live on Netlify.</p>
+    </div>
+    <div class="item">
+      <p class="sub"><strong>Nexxa – SaaS &amp; Agency Theme &nbsp;|&nbsp; HTML5 | CSS3 | Bootstrap 5</strong></p>
+      <p>Premium multi-page business and SaaS Bootstrap theme with 7 pages, pricing toggle, portfolio and blog templates, and a CSS variable design system. Live on Vercel.</p>
+    </div>
+    <div class="item">
+      <p class="sub"><strong>MangaVerse – Manga Reading Website &nbsp;|&nbsp; HTML5 | CSS3 | JavaScript</strong></p>
+      <p>Fully responsive manga and comic reading website featuring hero sliders, manga detail pages, category browsing, and search functionality built with HTML5, CSS3, and JavaScript.</p>
+    </div>
+    <div class="item">
+      <p class="sub"><strong>News Portal Website &nbsp;|&nbsp; HTML5 | CSS Grid | Flexbox | JavaScript</strong></p>
+      <p>Modern news portal with category-based sections, featured articles, responsive news cards, sticky navigation, and article detail pages.</p>
+    </div>
+    <div class="item">
+      <p class="sub"><strong>Business Website Templates &nbsp;|&nbsp; HTML5 | CSS3 | SEO | cPanel</strong></p>
+      <p>Production-ready websites for plumbing, HVAC, AC service, and loan businesses with SEO optimization, responsive layouts, and full deployment setup.</p>
+    </div>
+    <div class="item">
+      <p class="sub"><strong>WordPress Service Websites &nbsp;|&nbsp; WordPress | PHP | Elementor | SEO</strong></p>
+      <p>Custom WordPress websites with theme customization, plugin integration, SEO setup, domain configuration, and performance optimization.</p>
+    </div>
+
+    <h2 class="education-start">Education</h2>
+    <div class="row"><span>B.Sc. Computer Science</span><span>2021 – 2024</span></div>
+    <p class="sub">University of Mumbai &nbsp;|&nbsp; CGPA: 7.23 / 68.69%</p>
+    <p class="small">Core Subjects: Data Structures, DBMS, Web Technology, OOP, Computer Networks</p>
+    <div class="row"><span>HSC – Science (12th)</span><span>2018 – 2020</span></div>
+    <p class="sub">Annasaheb Vartak College, Vasai &nbsp;|&nbsp; 61.40%</p>
+    <div class="row"><span>SSC (10th)</span><span>2017 – 2018</span></div>
+    <p class="sub">Holy Cross High School &nbsp;|&nbsp; 88.40%</p>
+
+    <h2>Certifications</h2>
+    <p><strong>Certificate in Web Development (IT028)</strong> – Government Certified, IT Department</p>
+    <p><strong>Web Development Workshop</strong> – Hands-on Workshop, Web Technologies</p>
+
+  </main>
+
+</body>
+</html>
